@@ -13,7 +13,7 @@ end
 7. Done
 8. We can do it updating HISTSIZE variable. It described on line 1178. ignoreboth uses to set HISTCONTROL 
 to ignore dupped history entries and entries which starts with space.
-9. They can be used in brace expansions. Other words we can use the template inside the {} to update strings in runtime. It described on line 1508.
+9. They can be used in brace expansions. Other words we can use the template inside the {} to update strings in runtime or run loops. It described on line 1508.
 10. We create 100000 files with:
 ```
 touch {000001..100000..1}
