@@ -1,0 +1,9 @@
+[Unit]
+Description=Node Exporter Service
+AssertPathExists=/var/node_exporter/node_exporter-1.2.2.linux-amd64
+
+[Service]
+ExecStart=/var/node_exporter/node_exporter-1.2.2.linux-amd64/node_exporter $EXTRA_OPTS
+
+[Install]
+WantedBy=multi-user.target
