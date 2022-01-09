@@ -1,0 +1,19 @@
+version: '3.1'
+services:
+  postgres:
+    image: postgres:12
+    restart: always
+    volumes:
+      - ./database:/var/lib/postgresql/data
+      - ./dumps:/var/lib/postgresql/dumps
+    environment:
+      POSTGRES_PASSWORD: 123456
+      POSTGRES_USER: postgres
+      POSTGRES_DB: devops_homework
+    ports:
+      - 5433:5432
+  adminer:
+    image: adminer
+    restart: always
+    ports:
+      - 8080:8080
